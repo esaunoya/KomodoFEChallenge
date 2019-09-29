@@ -1,0 +1,38 @@
+
+
+/* .container{
+    border: solid red 2px;
+    width:  10px
+    width:  10rem
+    width:  10%
+    width:  10vw
+    width:  10em
+} */
+
+.container-yellow{
+    color: rgb(73, 73, 24);
+}
+
+#fixed-what{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: solid green 2px;
+}
+/* dont do 
+/* .container > div > h1{
+    color: green;
+} */
+
+.coin{
+    background: linear-gradient(to bottom left, #5AC8AF 0%, #234B78 100%);
+    min-height: 2rem;
+    height: auto;
+    color: white;
+    margin-top: .5rem;
+}
+
+.coin_logo{
+    width: 1.5rem;
+}
