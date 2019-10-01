@@ -6,10 +6,13 @@ async function getData(){
     const response = await fetch(url);
     const data = await response.json();
 
+    data.sort(function(a, b) {
+        return a.ticker.quotes.USD.market_cap - b.ticker.quotes.USD.market_cap;
+    });
+    
     var cont='<div class="container">';
-    for(var i=0; i<data.length; i++)
+    for(var i=data.length-1; i>=0; i--)
     {
-
         cont += `
         <div class="row coin shadow rounded">
             <div class="col-md-3">
