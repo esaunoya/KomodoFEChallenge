@@ -16,6 +16,8 @@
 
 .coin_logo{
     width: 1.5rem;
+    background: white;
+    border-radius:.5rem;
 }
 
 .fixtop{
