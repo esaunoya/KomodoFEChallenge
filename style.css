@@ -1,3 +1,7 @@
+.back-color{
+    background: #2b3545;
+}
+
 .coin{
     background: linear-gradient(to bottom left, #5AC8AF 0%, #234B78 100%);
     min-height: 2rem;
@@ -6,6 +10,14 @@
     margin-top: .5rem;
 }
 
+.coin-guide{
+    background: white;
+}
+
 .coin_logo{
     width: 1.5rem;
+}
+
+.fixtop{
+    margin-top: 4rem;
 }

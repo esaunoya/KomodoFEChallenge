@@ -15,15 +15,30 @@ async function getData(){
     {
         cont += `
         <div class="row coin shadow rounded">
-            <div class="col-md-3">
-            <img src="https://raw.githubusercontent.com/jl777/coins/master/icons/${data[i].ticker.symbol.toLowerCase()}.png" class="coin_logo">
+            <div class="col-1">
+                <p class="text-right">
+                    ${data.length - i}
+                </p>
+            </div>
+            <div class="col-3 text-left">
+                <img src="https://raw.githubusercontent.com/jl777/coins/master/icons/${data[i].ticker.symbol.toLowerCase()}.png" class="coin_logo">
                 ${data[i].komodo_coin_id}(${data[i].ticker.symbol})
             </div>
-            <div class="col-md-3">
-                $ ${data[i].ticker.quotes.USD.market_cap}(${data[i].ticker.quotes.USD.percent_change_24h}%)
+            <div class="col-3">
+                <p class="text-right">
+                    $ ${data[i].ticker.quotes.USD.market_cap}
+                </p>
             </div>
-            <div class="col-md-3">
-                $ ${data[i].ticker.quotes.USD.price}(${data[i].ticker.quotes.USD.percent_change_24h}%)
+            <div class="col-3">
+                <p class="text-right">
+                    $ ${data[i].ticker.quotes.USD.price}
+                </p>
+            </div>
+            
+            <div class="col-2">
+                <p class="text-right">
+                    ${data[i].ticker.quotes.USD.percent_change_24h}%
+                </p>
             </div>
         </div>`;    
     }
